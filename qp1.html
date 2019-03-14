@@ -1,0 +1,23 @@
+<html>
+<body>
+<form action="http://localhost:5000/success" method="POST">
+    1. What is a self referential structure?<BR>
+        <input type="radio" name="ans1" value="{{
+          request.form.structure }}" checked>Structure<br>
+        <input type="radio" name="ans1" value="{{
+          request.form.loop }}">Loop<br>
+        <input type="radio" name="ans1" value="{{
+          request.form.oop }}">OOP<br>
+        <br>
+    2. Queue is used for dash?
+        <input type="radio" name="ans2" value="{{
+          request.form.bfs }}">bfs<br>
+        <input type="radio" name="ans2" value="{{
+          request.form.dfs }}">dfs<br>
+    <input type="submit" >
+    </form>
+
+
+    
+</body>
+</html>
